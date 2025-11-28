@@ -3,12 +3,7 @@ import Title from "../title/Title";
 import CategoryItem from "./CategoryItem";
 
 function Category() {
-  const categoryItemList = [
-    {
-      id: 1,
-      name: "",
-    },
-  ];
+
 
   return (
     <section>
