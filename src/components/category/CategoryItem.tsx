@@ -1,19 +1,24 @@
-import Image from "../ui/Image"
-import weatherImg from "../../assets/image/catagory (4).png"
+import type { ListItem } from "../types/listItem";
 
-function CategoryItem() {
+function CategoryItem({ item }: { item: ListItem }) {
+  const { id, name, imgUrl, summary } = item;
+
   return (
-    <div className="text-center w-3/12">
+    <div key={id} className="text-center ">
+      <div className="w-[166px] h-[153px] flex items-center justify-center">
 
+      <img src={imgUrl} alt={name}  />
 
+      </div>
 
-<Image imgUrl={weatherImg} alt="img" className="mx-auto"/>
-<h4 className="text-[20px] font-Sans font-semibold text-textHeading pt-[29px] pb-[15px]">Calculated Weather </h4>
-<p className="text-[16px] font-Poppins text-textColor leading-[26px] max-w-[181px] mx-auto">Built Wicket longer admire do barton vanity itself do in it.</p>
-
-
+      <h4 className="text-[20px] font-Sans font-semibold text-textHeading pt-[29px] pb-[15px]">
+        {name}{" "}
+      </h4>
+      <p className="text-[16px] font-Poppins text-textColor leading-[26px] max-w-[181px] mx-auto">
+        {summary}
+      </p>
     </div>
-  )
+  );
 }
 
-export default CategoryItem
+export default CategoryItem;

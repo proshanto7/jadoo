@@ -1,20 +1,15 @@
-import Category from "./components/category/Category"
-import Header from "./components/header/Header"
-import Hero from "./components/hero/Hero"
+import Category from "./components/category/Category";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
 
 function App() {
   return (
     <main>
-
-<Header/>
-
-<Hero/>
-
-<Category/>
-
-
+      <Header />
+      <Hero />
+      <Category />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
