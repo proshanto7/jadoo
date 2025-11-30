@@ -1,4 +1,5 @@
 import Category from "./components/category/Category";
+import Destination from "./components/destination/Destination";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 
@@ -8,6 +9,8 @@ function App() {
       <Header />
       <Hero />
       <Category />
+<Destination/>
+
     </main>
   );
 }
