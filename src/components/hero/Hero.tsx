@@ -8,7 +8,7 @@ import { FaPlayCircle } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="pb-[113px]">
+    <section className="pb-[113px] pt-20">
       <Container>
         <Flex>
           <div className="w-2/4 pt-[130px] relative ">
