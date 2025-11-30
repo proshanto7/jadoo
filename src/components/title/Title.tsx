@@ -5,7 +5,7 @@ function Title( {title , subtitle} :{title:string , subtitle:string}) {
         {title}
       </h5>
 
-      <h2 className="text-[50px] font-Volkhov font-bold text-primary">
+      <h2 className="lg:text-[50px] text-2xl md:text-3xl font-Volkhov font-bold text-primary">
         {subtitle}
       </h2>
     </div>
