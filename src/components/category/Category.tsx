@@ -5,6 +5,8 @@ import WeatherImg from "../../assets/image/catagory (4).png";
 import FrightImg from "../../assets/image/catagory (3).png";
 import LocalImg from "../../assets/image/catagory (2).png";
 import CustomizationImg from "../../assets/image/catagory (1).png";
+import cardImgbg from "../../assets/image/star (1).png";
+import cardImg from "../../assets/image/star (2).png";
 import Flex from "../ui/Flex";
 function Category() {
   const categoryList = [
@@ -37,18 +39,24 @@ function Category() {
   ];
 
   return (
-    <section className="mt-5 lg:mt-0">
+    <section className="mt-5 md:mt-15 relative pb-[123px] ">
       <Container>
         <Title title="CATEGORY" subtitle="We Offer Best Services" />
 
-        <div>
-          <Flex className=" lg:justify-between md:flex-row flex-col mt-5 lg:mt-[60px]">
+        <div className="relative">
+          <Flex className=" absolute z-20 w-full  lg:justify-between md:flex-row flex-col mt-5 lg:mt-[60px]">
             {categoryList.map((item) => (
               <CategoryItem item={item} />
             ))}
           </Flex>
+          <img
+            src={cardImgbg}
+            alt="img"
+            className="hidden lg:block absolute -bottom-[440px] z-10 left-[280px]"
+          />
         </div>
       </Container>
+      <img src={cardImg} alt="img" className="absolute -top-4 right-10" />
     </section>
   );
 }

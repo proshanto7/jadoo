@@ -43,11 +43,11 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="md:w-2/4 w-full pt-6 md:pt-0 ">
+          <div className="md:w-2/4 w-full pt-6 md:pt-10 lg:pt-30 ">
             <Image
               imgUrl={bannerImg}
               alt="banner img"
-              className="w-[90%] md:w-full"
+              className="w-[90%] md:scale-130 lg:scale-135"
             />
           </div>
         </Flex>

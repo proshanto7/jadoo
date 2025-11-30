@@ -4,14 +4,15 @@ function CategoryItem({ item }: { item: ListItem }) {
   const { id, name, imgUrl, summary } = item;
 
   return (
-    <div key={id} className="text-center lg:bg-transparent bg-gray-200 lg:m-0  m-2 rounded-2xl">
+    <div
+      key={id}
+      className="group text-center lg:bg-white bg-gray-200 lg:px-11 lg:pb-5 lg:m-0 cursor-pointer m-2 rounded-[36px] hover:shadow-boxShadow duration-500"
+    >
       <div className="w-[166px] h-[153px] flex items-center justify-center mx-auto">
-
-      <img src={imgUrl} alt={name}   className=""/>
-
+        <img src={imgUrl} alt={name} className="" />
       </div>
 
-      <h4 className="text-[20px] font-Sans font-semibold text-textHeading lg:pt-[29px] pb-2 lg:pb-[15px]">
+      <h4 className="text-[20px] group-hover:text-btnColor duration-500 font-Sans font-semibold text-textHeading lg:pt-[29px] pb-2 lg:pb-[15px]">
         {name}{" "}
       </h4>
       <p className="text-[16px] font-Poppins text-textColor leading-[26px] max-w-[181px] pb-4 lg:mb-0 mx-auto">

@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme {
---font-Poppins: "Poppins", sans-serif;
---font-Volkhov: "Volkhov", serif;
---font-Sans: "Open Sans", sans-serif;
---color-primary: #14183E;
---color-secondary: #181E4B;
---color-btnColor : #DF6951;
---color-textColor:#5E6282;
---color-textHeading : #1E1D4C;
---color-yelloColor: #F1A501;
---color-listColor : #212832;
-
+  --font-Poppins: "Poppins", sans-serif;
+  --font-Volkhov: "Volkhov", serif;
+  --font-Sans: "Open Sans", sans-serif;
+  --color-primary: #14183e;
+  --color-secondary: #181e4b;
+  --color-btnColor: #df6951;
+  --color-textColor: #5e6282;
+  --color-textHeading: #1e1d4c;
+  --color-yelloColor: #f1a501;
+  --color-listColor: #212832;
+  --shadow-boxShadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
-button{
+button {
   cursor: pointer;
 }
