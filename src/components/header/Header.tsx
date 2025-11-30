@@ -79,10 +79,8 @@ function Header() {
                 </div>
               </div>
             </Flex>
-          </div>
-
           {mobileBtn ? (
-            <ul className="bg-[#fda132] rounded-2xl text-center lg:hidden block p-2.5 translate-y-[60px] duration-1000">
+            <ul className="bg-[#fda132] absolute w-full rounded-2xl text-center lg:hidden z-800  p-2.5 translate-y-[58px] duration-1000">
               {listItem.map((item) => (
                 <NavList
                   key={item.id}
@@ -92,7 +90,7 @@ function Header() {
               ))}
             </ul>
           ) : (
-            <ul className=" bg-[#fda132] lg:hidden block p-2.5 text-center -translate-y-[280px] duration-1000">
+            <ul className=" bg-[#fda132] absolute w-full lg:hidden  p-2.5 text-center z-800 -translate-y-[280px] duration-1000">
               {listItem.map((item) => (
                 <NavList
                   key={item.id}
@@ -102,6 +100,8 @@ function Header() {
               ))}
             </ul>
           )}
+          </div>
+
         </Container>
       </nav>
     </header>
