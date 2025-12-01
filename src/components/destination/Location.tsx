@@ -6,9 +6,9 @@ function Location({ item }: { item: LocationType }) {
   const { id, name, durations, imgUrl, price } = item;
 
   return (
-    <div className="group max-w-[314px] rounded-3xl cursor-pointer" key={id}>
-      <div className="h-[330px] w-full rounded-t-3xl overflow-hidden ">
-        <Image imgUrl={imgUrl} alt="rome img" className="group-hover:scale-105 duration-500" />
+    <div className="group lg:max-w-[314px] rounded-3xl cursor-pointer" key={id}>
+      <div className="h-[400px] md:h-[600px] lg:h-[330px] w-full rounded-t-3xl overflow-hidden ">
+        <Image imgUrl={imgUrl} alt="rome img" className=" group-hover:scale-105 duration-500" />
       </div>
       <div className="px-[25px] pt-[27px] shadow-boxShadow rounded-b-3xl bg-white">
         <div className="font-Poppins text-lg text-textColor flex justify-between ">

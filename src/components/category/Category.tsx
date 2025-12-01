@@ -39,12 +39,12 @@ function Category() {
   ];
 
   return (
-    <section className="mt-5 md:mt-15 relative pb-[123px] ">
+    <section className="mt-5 md:mt-15 relative lg:pb-[123px] pb-10 ">
       <Container>
         <Title title="CATEGORY" subtitle="We Offer Best Services" />
 
         <div className="relative">
-          <Flex className=" absolute z-20 w-full  lg:justify-between md:flex-row flex-col mt-5 lg:mt-[60px]">
+          <Flex className=" lg:absolute z-20 w-full md:justify-center  lg:justify-between md:flex-row flex-col mt-5 lg:mt-[60px]">
             {categoryList.map((item) => (
               <CategoryItem item={item} />
             ))}

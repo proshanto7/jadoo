@@ -33,22 +33,22 @@ function Destination() {
   ];
 
   return (
-    <section className="pt-[400px] pb-[600px]">
+    <section className="lg:pt-[400px] lg:pb-[600px] pb-10">
       <Container>
         <Title subtitle="Top Destinations" title="Top Selling" />
 
-<div className="relative">
-
-
-        <Flex className="justify-center gap-[35px] pt-12 absolute w-full z-50">
-          {locationList.map((data) => (
-            <Location item={data} key={data.id} />
-          ))}
-        </Flex>
-<img src={sideImg} alt="img" className="absolute top-[241px] right-8"/>
-
-</div>
-
+        <div className="relative">
+          <Flex className="justify-center flex-col  lg:flex-row gap-[35px] pt-12 lg:absolute w-full z-50">
+            {locationList.map((data) => (
+              <Location item={data} key={data.id} />
+            ))}
+          </Flex>
+          <img
+            src={sideImg}
+            alt="img"
+            className=" hidden lg:block absolute top-[241px] right-8"
+          />
+        </div>
       </Container>
     </section>
   );
