@@ -1,6 +1,6 @@
-function Title( {title , subtitle} :{title:string , subtitle:string}) {
+function Title( {title , subtitle , className} :{title:string , subtitle:string , className?: string}) {
   return (
-    <div className="text-center ">
+    <div className={`text-center ${className}`} >
       <h5 className="font-Poppins font-semibold text-[18px] text-textColor">
         {title}
       </h5>

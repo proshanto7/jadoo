@@ -1,3 +1,4 @@
+import Booking from "./components/bookTrip/Booking";
 import Category from "./components/category/Category";
 import Destination from "./components/destination/Destination";
 import Header from "./components/header/Header";
@@ -10,6 +11,8 @@ function App() {
       <Hero />
       <Category />
 <Destination/>
+
+<Booking/>
 
     </main>
   );
