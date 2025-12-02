@@ -31,7 +31,7 @@ function Company() {
       imgUrl: expediaImg,
     },
     {
-      id: 1,
+      id: 5,
       name: "alitalia",
       imgUrl: alitaliaImg,
     },
@@ -42,8 +42,8 @@ function Company() {
       <Container>
         <ul className="grid grid-cols-5 items-center justify-center cursor-pointer ">
           {companyList.map((data) => (
-            <li>
-              <Image imgUrl={data.imgUrl} alt="axon" />
+            <li key={data.id}>
+              <Image imgUrl={data.imgUrl} alt={data.name} />
             </li>
           ))}
         </ul>

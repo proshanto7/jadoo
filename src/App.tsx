@@ -4,6 +4,7 @@ import Company from "./components/company/Company";
 import Destination from "./components/destination/Destination";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Subscribe from "./components/subscribe/Subscribe";
 import Testimonials from "./components/testimonials/Testimonials";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Booking />
       <Testimonials />
       <Company/>
+      <Subscribe/>
 
     </main>
   );
