@@ -1,7 +1,7 @@
 import type { BookingType } from "../types/bookingType";
 import Image from "../ui/Image";
 
-function BookingStep({ item }: { item: BookingType , onClick : () => void }) {
+function BookingStep({ item }: { item: BookingType , onClick ?: () => void }) {
   const { id, title, imgUrl, description } = item;
 
   return (
