@@ -9,13 +9,13 @@ function Subscribe() {
   return (
     <section>
       <Container>
-        <div className="relative bg-[#DFD7F9] text-center py-15 md:py-20 rounded-b-[20px] rounded-tl-[70px] md:rounded-tl-[129px] rounded-tr-[20px]">
+        <div className="relative bg-[#DFD7F9] text-center py-10 md:py-20 rounded-b-[20px] rounded-tl-[70px] md:rounded-tl-[129px] rounded-tr-[20px]">
           <h2 className="max-w-[881px] mx-auto md:text-[33px] text-2xl font-Poppins font-semibold md:leading-[54px] text-textColor">
             Subscribe to get information, latest news and other interesting
             offers about Jadoo
           </h2>
-          <div className="relative md:py-[74px] py-8">
-            <div className="absolute w-full  flex items-center justify-center gap-6  z-200">
+          <div className="relative md:py-[74px] py-4">
+            <div className="md:absolute w-full flex items-center md:flex-row flex-col md:justify-center gap-6  z-200">
               <div className="relative">
                 <input
                   type="email"
@@ -32,13 +32,13 @@ function Subscribe() {
               </div>
             </div>
           </div>
-          <img src={ringImg} alt="img" className=" absolute top-0 right-0" />
+          <img src={ringImg} alt="img" className="hidden md:block absolute top-0 right-0" />
           <img
             src={ringImgs}
             alt="img"
-            className="absolute bottom-0 -left-25"
+            className="hidden md:block absolute bottom-0 -left-25"
           />
-          <img src={msgImg} alt="img" className="absolute -top-3 -right-3" />
+          <img src={msgImg} alt="img" className="hidden md:block absolute -top-3 -right-3" />
         </div>
       </Container>
     </section>

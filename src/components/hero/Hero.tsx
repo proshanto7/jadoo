@@ -47,7 +47,6 @@ function Hero() {
             <Image
               imgUrl={bannerImg}
               alt="banner img"
-              className="w-[90%] md:scale-130 lg:scale-135"
             />
           </div>
         </Flex>
